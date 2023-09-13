@@ -19,8 +19,8 @@ Seu trabalho é consumir o endpoint GET https://sdw-2023-prd.up.railway.app/user
 Depois de obter os dados dos clientes, você vai usar a API do ChatGPT (OpenAI) para gerar uma mensagem de marketing personalizada para cada cliente. Essa mensagem deve enfatizar a importância dos investimentos.
 Uma vez que a mensagem para cada cliente esteja pronta, você vai enviar essas informações de volta para a API, atualizando a lista de "news" de cada usuário usando o endpoint PUT https://sdw-2023-prd.up.railway.app/users/{id}.
 [ ]
-# Utilize sua própria URL se quiser ;)
-# Repositório da API: https://github.com/digitalinnovationone/santander-dev-week-2023-api
+
+
 sdw2023_api_url = 'https://sdw-2023-prd.up.railway.app'
 Extract
 Extraia a lista de IDs de usuário a partir do arquivo CSV. Para cada ID, faça uma requisição GET para obter os dados do usuário correspondente.
@@ -140,16 +140,7 @@ Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.10/dis
 Installing collected packages: openai
 Successfully installed openai-0.28.0
 [ ]
-# Documentação Oficial da API OpenAI: https://platform.openai.com/docs/api-reference/introduction
-# Informações sobre o Período Gratuito: https://help.openai.com/en/articles/4936830
 
-# Para gerar uma API Key:
-# 1. Crie uma conta na OpenAI
-# 2. Acesse a seção "API Keys"
-# 3. Clique em "Create API Key"
-# Link direto: https://platform.openai.com/account/api-keys
-
-# Substitua o texto TODO por sua API Key da OpenAI, ela será salva como uma variável de ambiente.
 openai_api_key = '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'
 [ ]
 from openai.api_resources.completion import Completion
